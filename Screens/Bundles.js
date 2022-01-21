@@ -51,13 +51,6 @@ const Bundles = () => {
           )}
         />
       </View>
-      {/* mapping way */}
-      {data.map((item) => (
-        <View key={item._id}>
-          <Image style={styles.imageStyle} source={{ uri: item.cover }} />
-          <Text style={styles.title}>{item.title}</Text>
-        </View>
-      ))}
     </ScrollView>
   );
 };
